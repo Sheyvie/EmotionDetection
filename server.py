@@ -1,7 +1,5 @@
 """
 Emotion Detection Server
-
-T
 """
 
 from flask import Flask, render_template, request
@@ -35,7 +33,7 @@ def sent_detector():
 
 @app.route("/")
 def render_index_page():
-    ''' This function initiates the rendering of the main application
+    ''' Rendering of the main application
         page over the Flask channel
     '''
     return render_template('index.html')
